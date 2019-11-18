@@ -1,0 +1,19 @@
+approvals:
+[
+{
+  scope:
+   {
+     branches: [ "master" ]
+   }
+   match : "all[count=1,self=false]"
+ }  
+   #Disable LGTM on remining branches  
+   { 
+   match: "off"
+   }
+   ]
+   
+   merge:
+   {
+   enable: true
+   }
